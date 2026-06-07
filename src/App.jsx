@@ -54,7 +54,7 @@ import AISetupPage from "./pages/IllustratorBasics/AiSetupPage";
 import AIShortcutsPage from "./pages/IllustratorBasics/AiShortcutsPage";
 import AIToolsPage from "./pages/IllustratorBasics/AiToolsPage";
 import AIExportPage from "./pages/IllustratorBasics/AiExportPage";
-import IllustratorIntermediatePage from "./pages/IllustratorIntermediatePage";
+import Illustratorintermediatepage from "./pages/Illustratorintermediatepage";
 
 import ProjectsPage from "./pages/ProjectsPage";
 import CommunityPage from "./pages/CommunityPage";
@@ -140,7 +140,7 @@ const IllustratorBasicsWrapper = () => {
 const IllustratorIntermediateWrapper = () => {
   const navigate = useNavigate();
   return (
-    <IllustratorIntermediatePage
+    <Illustratorintermediatepage
       onBack={() => window.history.back()}
       onNavigate={(r) => navigate(`/${r}`)}
     />
