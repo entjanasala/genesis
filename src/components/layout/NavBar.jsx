@@ -43,12 +43,21 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/lectures"
+            <a
+              href="#"
               className={location.pathname === "/lectures" ? "active" : ""}
+              onClick={(e) => {
+                e.preventDefault();
+                if (user) {
+                  window.location.href = "/lectures";
+                } else {
+                  setLoginOpen(true);
+                }
+              }}
+              style={{ cursor: "pointer" }}
             >
               Modules
-            </Link>
+            </a>
           </li>
           <li>
             <a href="#about">About</a>
