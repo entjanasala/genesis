@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/layout/Navbar";
+import Navbar from "../components/layout/NavBar";
 import { useProgress } from "../context/ProgressContext";
 
 const MODULES = [
